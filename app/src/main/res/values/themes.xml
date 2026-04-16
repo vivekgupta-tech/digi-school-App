@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ╔══════════════════════════════════════════════════════════════╗
+    ║   res/values/themes.xml  →  DAY / LIGHT MODE                 ║
+    ║   Modern glassy school app theme                             ║
+    ╚══════════════════════════════════════════════════════════════╝
+-->
+<resources>
+
+    <!-- ═══════════════════════════════════
+         BASE APP THEME — DAY MODE
+         ═══════════════════════════════════ -->
+    <style name="Theme.SchoolApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- Brand / Primary -->
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="colorPrimaryVariant">@color/brand_primary_dark</item>
+        <item name="colorPrimaryDark">@color/brand_primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary / Accent -->
+        <item name="colorSecondary">@color/brand_secondary</item>
+        <item name="colorSecondaryVariant">@color/brand_secondary_light</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Backgrounds -->
+        <item name="android:colorBackground">@color/day_bg_primary</item>
+        <item name="colorSurface">@color/day_bg_surface</item>
+        <item name="colorOnBackground">@color/day_text_primary</item>
+        <item name="colorOnSurface">@color/day_text_primary</item>
+
+        <!-- Error -->
+        <item name="colorError">@color/error_main</item>
+        <item name="colorOnError">@color/white</item>
+
+        <!-- Status Bar -->
+        <item name="android:statusBarColor">@color/day_status_bar</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- Navigation Bar -->
+        <item name="android:navigationBarColor">@color/day_nav_bar</item>
+        <item name="android:windowLightNavigationBar">true</item>
+
+        <!-- Window -->
+        <item name="android:windowBackground">@color/day_bg_primary</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+
+        <!-- Text appearance -->
+        <item name="android:textColorPrimary">@color/day_text_primary</item>
+        <item name="android:textColorSecondary">@color/day_text_secondary</item>
+        <item name="android:textColorHint">@color/day_text_tertiary</item>
+
+        <!-- Elevation overlays -->
+        <item name="elevationOverlayEnabled">false</item>
+
+        <!-- Ripple -->
+        <item name="colorControlHighlight">@color/ripple_day</item>
+
+        <!-- Shape -->
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.SchoolApp.Medium</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.SchoolApp.Large</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.SchoolApp.Small</item>
+
+        <!-- Material component defaults -->
+        <item name="materialButtonStyle">@style/Widget.SchoolApp.Button</item>
+        <item name="bottomNavigationStyle">@style/Widget.SchoolApp.BottomNavigation</item>
+        <item name="cardViewStyle">@style/Widget.SchoolApp.Card</item>
+        <item name="textInputStyle">@style/Widget.SchoolApp.TextInput</item>
+        <item name="chipStyle">@style/Widget.SchoolApp.Chip</item>
+        <item name="toolbarStyle">@style/Widget.SchoolApp.Toolbar</item>
+
+        <!-- Font -->
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
+    <!-- Launcher / Splash theme -->
+    <style name="Theme.SchoolApp.Splash" parent="Theme.SchoolApp">
+        <item name="android:statusBarColor">@color/brand_primary</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+    <!-- ═══════════════════════════════════
+         SHAPE APPEARANCES
+         ═══════════════════════════════════ -->
+    <style name="ShapeAppearance.SchoolApp.Small" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="ShapeAppearance.SchoolApp.Medium" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <style name="ShapeAppearance.SchoolApp.Large" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="ShapeAppearance.SchoolApp.ExtraLarge" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">24dp</item>
+    </style>
+
+    <style name="ShapeAppearance.SchoolApp.Pill" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <!-- ═══════════════════════════════════
+         BUTTON STYLES
+         ═══════════════════════════════════ -->
+    <style name="Widget.SchoolApp.Button" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/brand_primary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="elevation">0dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="Widget.SchoolApp.Button.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/brand_primary</item>
+        <item name="android:textColor">@color/brand_primary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+
+    <style name="Widget.SchoolApp.Button.Text" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/brand_primary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+
+    <!-- ═══════════════════════════════════
+         CARD STYLES
+         ═══════════════════════════════════ -->
+    <style name="Widget.SchoolApp.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/day_bg_surface</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeColor">@color/day_stroke_card</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <!-- Glass card day mode -->
+    <style name="Widget.SchoolApp.Card.Glass" parent="Widget.SchoolApp.Card">
+        <item name="cardBackgroundColor">@color/day_bg_glass</item>
+        <item name="strokeColor">@color/glass_stroke_day</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <!-- Feature tile card (3x2 grid) -->
+    <style name="Widget.SchoolApp.Card.FeatureTile" parent="Widget.SchoolApp.Card">
+        <item name="cardBackgroundColor">@color/day_tile_bg</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+
+    <!-- Stat card (Students / Classes / Attendance) -->
+    <style name="Widget.SchoolApp.Card.Stat" parent="Widget.SchoolApp.Card">
+        <item name="cardBackgroundColor">@color/stat_card_bg_day</item>
+        <item name="cardCornerRadius">14dp</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">@color/day_stroke_card</item>
+    </style>
+
+    <!-- ═══════════════════════════════════
+         TEXT INPUT STYLE
+         ═══════════════════════════════════ -->
+    <style name="Widget.SchoolApp.TextInput" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/day_border</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="boxBackgroundColor">@color/day_bg_surface</item>
+        <item name="hintTextColor">@color/day_text_tertiary</item>
+        <item name="android:textColorHint">@color/day_text_tertiary</item>
+    </style>
+
+    <!-- ═══════════════════════════════════
+         BOTTOM NAVIGATION
+         ═══════════════════════════════════ -->
+    <style name="Widget.SchoolApp.BottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:background">@color/bottom_nav_bg_day</item>
+        <item name="itemIconTint">@color/bottom_nav_icon_color_day</item>
+        <item name="itemTextColor">@color/bottom_nav_icon_color_day</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="elevation">8dp</item>
+<!--        <item name="itemActiveIndicatorStyle">@style/Widget.SchoolApp.BottomNavigation.ActiveIndicator</item>-->
+    </style>
+
+<!--    <style name="Widget.SchoolApp.BottomNavigation.ActiveIndicator" parent="Widget.MaterialComponents.BottomNavigationView.ActiveIndicator">-->
+<!--        <item name="android:color">@color/bottom_nav_indicator_day</item>-->
+<!--        <item name="shapeAppearance">@style/ShapeAppearance.SchoolApp.Pill</item>-->
+<!--    </style>-->
+
+    <!-- ═══════════════════════════════════
+         CHIP STYLE
+         ═══════════════════════════════════ -->
+    <style name="Widget.SchoolApp.Chip" parent="Widget.MaterialComponents.Chip.Action">
+        <item name="chipBackgroundColor">@color/day_tile_bg</item>
+        <item name="android:textColor">@color/brand_primary</item>
+        <item name="chipCornerRadius">8dp</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipStrokeColor">@color/day_stroke_card</item>
+    </style>
+
+    <!-- NEW badge chip -->
+    <style name="Widget.SchoolApp.Chip.Badge.New" parent="Widget.SchoolApp.Chip">
+        <item name="chipBackgroundColor">@color/badge_new_bg</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="chipStrokeWidth">0dp</item>
+        <item name="chipCornerRadius">6dp</item>
+        <item name="android:textSize">9sp</item>
+    </style>
+
+    <!-- HOT badge chip -->
+    <style name="Widget.SchoolApp.Chip.Badge.Hot" parent="Widget.SchoolApp.Chip">
+        <item name="chipBackgroundColor">@color/badge_hot_bg</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="chipStrokeWidth">0dp</item>
+        <item name="chipCornerRadius">6dp</item>
+        <item name="android:textSize">9sp</item>
+    </style>
+
+    <!-- ═══════════════════════════════════
+         TOOLBAR / APP BAR
+         ═══════════════════════════════════ -->
+    <style name="Widget.SchoolApp.Toolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:background">@color/day_bg_primary</item>
+        <item name="android:elevation">0dp</item>
+        <item name="titleTextAppearance">@style/TextAppearance.SchoolApp.Toolbar.Title</item>
+    </style>
+
+    <!-- ═══════════════════════════════════
+         TEXT APPEARANCES
+         ═══════════════════════════════════ -->
+    <style name="TextAppearance.SchoolApp.Toolbar.Title" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textColor">@color/day_text_primary</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="TextAppearance.SchoolApp.Display" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textColor">@color/day_text_primary</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+
+    <style name="TextAppearance.SchoolApp.Headline" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:textSize">22sp</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textColor">@color/day_text_primary</item>
+    </style>
+
+    <style name="TextAppearance.SchoolApp.Title" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/day_text_primary</item>
+    </style>
+
+    <style name="TextAppearance.SchoolApp.Subtitle" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/day_text_secondary</item>
+    </style>
+
+    <style name="TextAppearance.SchoolApp.Body" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/day_text_primary</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+    </style>
+
+    <style name="TextAppearance.SchoolApp.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/day_text_secondary</item>
+    </style>
+
+    <style name="TextAppearance.SchoolApp.Label" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="android:textSize">11sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/day_text_tertiary</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!-- Stat number display (42, 6, 94%) -->
+    <style name="TextAppearance.SchoolApp.StatNumber" parent="TextAppearance.SchoolApp.Display">
+        <item name="android:textSize">28sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textColor">@color/stat_number_day</item>
+    </style>
+
+    <!-- Score badge text -->
+    <style name="TextAppearance.SchoolApp.ScoreBadge" parent="">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <!-- Profile name -->
+    <style name="TextAppearance.SchoolApp.ProfileName" parent="">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textColor">@color/day_text_primary</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+
+    <!-- Section header (CORE FEATURES, NEW FEATURES) -->
+    <style name="TextAppearance.SchoolApp.SectionHeader" parent="TextAppearance.SchoolApp.Label">
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0.12</item>
+        <item name="android:textColor">@color/day_text_tertiary</item>
+    </style>
+
+    <!-- ═══════════════════════════════════
+         DIALOG STYLE
+         ═══════════════════════════════════ -->
+    <style name="Theme.SchoolApp.Dialog" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="colorSurface">@color/day_bg_surface</item>
+        <item name="colorOnSurface">@color/day_text_primary</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.SchoolApp.Large</item>
+    </style>
+
+    <!-- ═══════════════════════════════════
+         BOTTOM SHEET
+         ═══════════════════════════════════ -->
+    <style name="Theme.SchoolApp.BottomSheet" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.SchoolApp.BottomSheet</item>
+    </style>
+
+    <style name="Widget.SchoolApp.BottomSheet" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="android:background">@drawable/bg_bottom_sheet</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.SchoolApp.BottomSheet</item>
+    </style>
+
+    <style name="ShapeAppearance.SchoolApp.BottomSheet" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">24dp</item>
+        <item name="cornerSizeTopRight">24dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+    <!-- ═══════════════════════════════════
+         SWITCH (Dark Mode Toggle)
+         ═══════════════════════════════════ -->
+    <style name="Widget.SchoolApp.Switch" parent="Widget.MaterialComponents.CompoundButton.Switch">
+        <item name="thumbTint">@color/toggle_thumb</item>
+        <item name="trackTint">@color/toggle_track_color_day</item>
+    </style>
+
+    <!-- ═══════════════════════════════════
+         SNACKBAR
+         ═══════════════════════════════════ -->
+    <style name="Widget.SchoolApp.Snackbar" parent="Widget.MaterialComponents.Snackbar">
+        <item name="android:layout_margin">16dp</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.SchoolApp.Medium</item>
+        <item name="backgroundTint">@color/night_bg_elevated</item>
+        <item name="actionTextColorAlpha">1</item>
+<!--        <item name="actionTextColor">@color/brand_primary_light</item>-->
+    </style>
+
+    <!-- ═══════════════════════════════════
+         PROGRESS BAR (Subject progress)
+         ═══════════════════════════════════ -->
+    <style name="Widget.SchoolApp.ProgressBar" parent="Widget.MaterialComponents.LinearProgressIndicator">
+        <item name="trackColor">@color/progress_track_day</item>
+        <item name="trackCornerRadius">4dp</item>
+        <item name="android:minHeight">8dp</item>
+        <item name="trackThickness">8dp</item>
+    </style>
+
+    <!-- ═══════════════════════════════════
+         TAB LAYOUT
+         ═══════════════════════════════════ -->
+    <style name="Widget.SchoolApp.TabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="android:background">@color/day_bg_surface</item>
+        <item name="tabTextColor">@color/day_text_secondary</item>
+        <item name="tabSelectedTextColor">@color/brand_primary</item>
+        <item name="tabIndicatorColor">@color/brand_primary</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <item name="tabIndicatorGravity">bottom</item>
+        <item name="tabIndicatorFullWidth">false</item>
+        <item name="tabTextAppearance">@style/TextAppearance.SchoolApp.Tab</item>
+    </style>
+
+    <style name="TextAppearance.SchoolApp.Tab" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+
+        <style name="Theme.DigitalSchool" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+            <!-- Customize -->
+            <item name="colorPrimary">#6200EE</item>
+            <item name="colorPrimaryVariant">#3700B3</item>
+            <item name="colorOnPrimary">#FFFFFF</item>
+        </style>
+
+
+</resources>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ╔══════════════════════════════════════════════════════════════╗
+    ║   res/values/attrs.xml                                       ║
+    ║   Custom theme attributes — reference these in layouts       ║
+    ║   instead of hardcoded colors for auto day/night support     ║
+    ╚══════════════════════════════════════════════════════════════╝
+-->
+<resources>
+
+    <!-- ══════════════════════════════════
+         BACKGROUNDS
+         ══════════════════════════════════ -->
+    <attr name="colorBgPrimary" format="color" />         <!-- Page background -->
+    <attr name="colorBgSurface" format="color" />          <!-- Cards -->
+    <attr name="colorBgSurface2" format="color" />         <!-- Secondary cards -->
+    <attr name="colorBgElevated" format="color" />         <!-- Dialogs/sheets -->
+    <attr name="colorBgGlass" format="color" />            <!-- Glass tint -->
+
+    <!-- ══════════════════════════════════
+         TILE BACKGROUNDS (Feature grid)
+         ══════════════════════════════════ -->
+    <attr name="colorTileBg" format="color" />
+    <attr name="colorTileBgPurple" format="color" />
+    <attr name="colorTileBgGreen" format="color" />
+    <attr name="colorTileBgOrange" format="color" />
+    <attr name="colorTileBgPink" format="color" />
+    <attr name="colorTileBgTeal" format="color" />
+    <attr name="colorTileBgRed" format="color" />
+    <attr name="colorTileBgYellow" format="color" />
+
+    <!-- ══════════════════════════════════
+         TEXT
+         ══════════════════════════════════ -->
+    <attr name="colorTextPrimary" format="color" />
+    <attr name="colorTextSecondary" format="color" />
+    <attr name="colorTextTertiary" format="color" />
+    <attr name="colorTextLink" format="color" />
+
+    <!-- ══════════════════════════════════
+         BORDERS & DIVIDERS
+         ══════════════════════════════════ -->
+    <attr name="colorBorder" format="color" />
+    <attr name="colorDivider" format="color" />
+    <attr name="colorStrokeCard" format="color" />
+    <attr name="colorGlassStroke" format="color" />
+
+    <!-- ══════════════════════════════════
+         NAVIGATION
+         ══════════════════════════════════ -->
+    <attr name="colorBottomNavBg" format="color" />
+    <attr name="colorBottomNavActive" format="color" />
+    <attr name="colorBottomNavInactive" format="color" />
+    <attr name="colorBottomNavIndicator" format="color" />
+
+    <!-- ══════════════════════════════════
+         STATS SECTION
+         ══════════════════════════════════ -->
+    <attr name="colorStatCardBg" format="color" />
+    <attr name="colorStatNumber" format="color" />
+    <attr name="colorStatLabel" format="color" />
+
+    <!-- ══════════════════════════════════
+         ANNOUNCEMENT BANNER
+         ══════════════════════════════════ -->
+    <attr name="colorAnnouncementBg" format="color" />
+    <attr name="colorAnnouncementBorder" format="color" />
+
+    <!-- ══════════════════════════════════
+         PROFILE HEADER
+         ══════════════════════════════════ -->
+    <attr name="colorProfileCardBg" format="color" />
+    <attr name="colorAvatarBg" format="color" />
+
+    <!-- ══════════════════════════════════
+         PROGRESS BARS
+         ══════════════════════════════════ -->
+    <attr name="colorProgressTrack" format="color" />
+
+    <!-- ══════════════════════════════════
+         SCORE BADGES
+         ══════════════════════════════════ -->
+    <attr name="colorScoreExcellentBg" format="color" />
+    <attr name="colorScoreExcellentText" format="color" />
+    <attr name="colorScoreGoodBg" format="color" />
+    <attr name="colorScoreGoodText" format="color" />
+    <attr name="colorScoreAverageBg" format="color" />
+    <attr name="colorScoreAverageText" format="color" />
+    <attr name="colorScoreLowBg" format="color" />
+    <attr name="colorScoreLowText" format="color" />
+
+    <!-- ══════════════════════════════════
+         CUSTOM VIEW ATTRS
+         ══════════════════════════════════ -->
+    <declare-styleable name="FeatureTileView">
+        <attr name="tileBgColor" format="color|reference" />
+        <attr name="tileIconSrc" format="reference" />
+        <attr name="tileLabel" format="string" />
+        <attr name="tileBadgeType" format="enum">
+            <enum name="badge_none" value="0" />
+            <enum name="badge_new" value="1" />
+            <enum name="badge_hot" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="StatCardView">
+        <attr name="statValue" format="string" />
+        <attr name="statLabel" format="string" />
+        <attr name="statIcon" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SubjectProgressView">
+        <attr name="subjectName" format="string" />
+        <attr name="subjectProgress" format="integer" />
+        <attr name="progressColor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ScoreBadgeView">
+        <attr name="scoreValue" format="integer" />
+        <attr name="scoreMax" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="GlassCardView">
+        <attr name="glassBlurRadius" format="dimension" />
+        <attr name="glassTintAlpha" format="float" />
+        <attr name="glassBorderWidth" format="dimension" />
+    </declare-styleable>
+
+</resources>

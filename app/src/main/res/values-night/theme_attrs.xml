@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ╔══════════════════════════════════════════════════════════════╗
+    ║   res/values-night/theme_attrs.xml  —  NIGHT MODE attr values ║
+    ║   These map custom attrs → actual colors for DARK mode       ║
+    ╚══════════════════════════════════════════════════════════════╝
+-->
+<resources>
+
+    <style name="ThemeOverlay.SchoolApp.NightAttrs" parent="">
+        <!-- Backgrounds -->
+        <item name="colorBgPrimary">@color/night_bg_primary</item>
+        <item name="colorBgSurface">@color/night_bg_surface</item>
+        <item name="colorBgSurface2">@color/night_bg_surface_2</item>
+        <item name="colorBgElevated">@color/night_bg_elevated</item>
+        <item name="colorBgGlass">@color/night_bg_glass</item>
+
+        <!-- Tiles -->
+        <item name="colorTileBg">@color/night_tile_bg</item>
+        <item name="colorTileBgPurple">@color/night_tile_bg_purple</item>
+        <item name="colorTileBgGreen">@color/night_tile_bg_green</item>
+        <item name="colorTileBgOrange">@color/night_tile_bg_orange</item>
+        <item name="colorTileBgPink">@color/night_tile_bg_pink</item>
+        <item name="colorTileBgTeal">@color/night_tile_bg_teal</item>
+        <item name="colorTileBgRed">@color/night_tile_bg_red</item>
+        <item name="colorTileBgYellow">@color/night_tile_bg_yellow</item>
+
+        <!-- Text -->
+        <item name="colorTextPrimary">@color/night_text_primary</item>
+        <item name="colorTextSecondary">@color/night_text_secondary</item>
+        <item name="colorTextTertiary">@color/night_text_tertiary</item>
+        <item name="colorTextLink">@color/night_text_link</item>
+
+        <!-- Borders -->
+        <item name="colorBorder">@color/night_border</item>
+        <item name="colorDivider">@color/night_divider</item>
+        <item name="colorStrokeCard">@color/night_stroke_card</item>
+        <item name="colorGlassStroke">@color/glass_stroke_night</item>
+
+        <!-- Nav -->
+        <item name="colorBottomNavBg">@color/bottom_nav_bg_night</item>
+        <item name="colorBottomNavActive">@color/bottom_nav_active_night</item>
+        <item name="colorBottomNavInactive">@color/bottom_nav_inactive_night</item>
+        <item name="colorBottomNavIndicator">@color/bottom_nav_indicator_night</item>
+
+        <!-- Stats -->
+        <item name="colorStatCardBg">@color/stat_card_bg_night</item>
+        <item name="colorStatNumber">@color/stat_number_night</item>
+        <item name="colorStatLabel">@color/stat_label_night</item>
+
+        <!-- Announcement -->
+        <item name="colorAnnouncementBg">@color/announcement_bg_night</item>
+        <item name="colorAnnouncementBorder">@color/announcement_border_night</item>
+
+        <!-- Profile -->
+        <item name="colorProfileCardBg">@color/profile_card_bg_night</item>
+        <item name="colorAvatarBg">@color/profile_avatar_bg_night</item>
+
+        <!-- Progress -->
+        <item name="colorProgressTrack">@color/progress_track_night</item>
+
+        <!-- Score badges -->
+        <item name="colorScoreExcellentBg">@color/score_excellent_bg</item>
+        <item name="colorScoreExcellentText">@color/score_excellent_text</item>
+        <item name="colorScoreGoodBg">@color/score_good_bg</item>
+        <item name="colorScoreGoodText">@color/score_good_text</item>
+        <item name="colorScoreAverageBg">@color/score_average_bg</item>
+        <item name="colorScoreAverageText">@color/score_average_text</item>
+        <item name="colorScoreLowBg">@color/score_low_bg</item>
+        <item name="colorScoreLowText">@color/score_low_text</item>
+    </style>
+
+</resources>

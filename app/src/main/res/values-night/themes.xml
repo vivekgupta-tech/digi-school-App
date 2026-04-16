@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ╔══════════════════════════════════════════════════════════════╗
+    ║   res/values-night/themes.xml  →  NIGHT / DARK MODE          ║
+    ║   Deep Navy + Glassy look — matches your screenshot          ║
+    ╚══════════════════════════════════════════════════════════════╝
+-->
+<resources>
+
+    <!-- ═══════════════════════════════════
+         BASE APP THEME — NIGHT MODE
+         ═══════════════════════════════════ -->
+    <style name="Theme.SchoolApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- Brand / Primary -->
+        <item name="colorPrimary">@color/brand_primary_light</item>
+        <item name="colorPrimaryVariant">@color/brand_primary</item>
+        <item name="colorPrimaryDark">@color/night_bg_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary / Accent -->
+        <item name="colorSecondary">@color/brand_secondary_light</item>
+        <item name="colorSecondaryVariant">@color/brand_secondary</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Backgrounds -->
+        <item name="android:colorBackground">@color/night_bg_primary</item>
+        <item name="colorSurface">@color/night_bg_surface</item>
+        <item name="colorOnBackground">@color/night_text_primary</item>
+        <item name="colorOnSurface">@color/night_text_primary</item>
+
+        <!-- Error -->
+        <item name="colorError">@color/error_main</item>
+        <item name="colorOnError">@color/white</item>
+
+        <!-- Status Bar — dark -->
+        <item name="android:statusBarColor">@color/night_status_bar</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Navigation Bar — dark -->
+        <item name="android:navigationBarColor">@color/night_nav_bar</item>
+<!--        <item name="android:windowLightNavigationBar">false</item>-->
+
+        <!-- Window -->
+        <item name="android:windowBackground">@color/night_bg_primary</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+
+        <!-- Text -->
+        <item name="android:textColorPrimary">@color/night_text_primary</item>
+        <item name="android:textColorSecondary">@color/night_text_secondary</item>
+        <item name="android:textColorHint">@color/night_text_tertiary</item>
+
+        <!-- No elevation overlay tint in custom dark theme -->
+        <item name="elevationOverlayEnabled">true</item>
+        <item name="elevationOverlayColor">@color/brand_primary</item>
+
+        <!-- Ripple -->
+        <item name="colorControlHighlight">@color/ripple_night</item>
+
+        <!-- Shape (same corners, carried over) -->
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.SchoolApp.Medium</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.SchoolApp.Large</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.SchoolApp.Small</item>
+
+        <!-- Override components for dark mode -->
+        <item name="materialButtonStyle">@style/Widget.SchoolApp.Button.Night</item>
+        <item name="bottomNavigationStyle">@style/Widget.SchoolApp.BottomNavigation.Night</item>
+        <item name="cardViewStyle">@style/Widget.SchoolApp.Card.Night</item>
+        <item name="textInputStyle">@style/Widget.SchoolApp.TextInput.Night</item>
+        <item name="chipStyle">@style/Widget.SchoolApp.Chip.Night</item>
+        <item name="toolbarStyle">@style/Widget.SchoolApp.Toolbar.Night</item>
+
+        <!-- Font -->
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
+    <!-- ═══════════════════════════════════
+         NIGHT BUTTON
+         ═══════════════════════════════════ -->
+    <style name="Widget.SchoolApp.Button.Night" parent="Widget.SchoolApp.Button">
+        <item name="backgroundTint">@color/brand_primary</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- ═══════════════════════════════════
+         NIGHT CARD
+         ═══════════════════════════════════ -->
+    <style name="Widget.SchoolApp.Card.Night" parent="Widget.SchoolApp.Card">
+        <item name="cardBackgroundColor">@color/night_bg_surface</item>
+        <item name="strokeColor">@color/night_stroke_card</item>
+    </style>
+
+    <!-- Glass card night -->
+    <style name="Widget.SchoolApp.Card.Glass.Night" parent="Widget.SchoolApp.Card.Night">
+        <item name="cardBackgroundColor">@color/night_bg_glass</item>
+        <item name="strokeColor">@color/glass_stroke_night</item>
+    </style>
+
+    <!-- Feature tile night -->
+    <style name="Widget.SchoolApp.Card.FeatureTile.Night" parent="Widget.SchoolApp.Card.Night">
+        <item name="cardBackgroundColor">@color/night_tile_bg</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
+
+    <!-- Stat card night -->
+    <style name="Widget.SchoolApp.Card.Stat.Night" parent="Widget.SchoolApp.Card.Night">
+        <item name="cardBackgroundColor">@color/stat_card_bg_night</item>
+        <item name="strokeColor">@color/night_stroke_card</item>
+    </style>
+
+    <!-- ═══════════════════════════════════
+         NIGHT TEXT INPUT
+         ═══════════════════════════════════ -->
+    <style name="Widget.SchoolApp.TextInput.Night" parent="Widget.SchoolApp.TextInput">
+        <item name="boxStrokeColor">@color/night_border</item>
+        <item name="boxBackgroundColor">@color/night_bg_surface</item>
+        <item name="hintTextColor">@color/night_text_tertiary</item>
+        <item name="android:textColorHint">@color/night_text_tertiary</item>
+    </style>
+
+    <!-- ═══════════════════════════════════
+         NIGHT BOTTOM NAV
+         ═══════════════════════════════════ -->
+    <style name="Widget.SchoolApp.BottomNavigation.Night" parent="Widget.SchoolApp.BottomNavigation">
+        <item name="android:background">@color/bottom_nav_bg_night</item>
+        <item name="itemIconTint">@color/bottom_nav_icon_color_night</item>
+        <item name="itemTextColor">@color/bottom_nav_icon_color_night</item>
+<!--        <item name="itemActiveIndicatorStyle">@style/Widget.SchoolApp.BottomNavigation.ActiveIndicator.Night</item>-->
+    </style>
+
+<!--    <style name="Widget.SchoolApp.BottomNavigation.ActiveIndicator.Night" parent="Widget.SchoolApp.BottomNavigation.ActiveIndicator">-->
+<!--        <item name="android:color">@color/bottom_nav_indicator_night</item>-->
+<!--    </style>-->
+
+    <!-- ═══════════════════════════════════
+         NIGHT CHIP
+         ═══════════════════════════════════ -->
+    <style name="Widget.SchoolApp.Chip.Night" parent="Widget.SchoolApp.Chip">
+        <item name="chipBackgroundColor">@color/night_tile_bg</item>
+        <item name="android:textColor">@color/brand_primary_light</item>
+        <item name="chipStrokeColor">@color/night_stroke_card</item>
+    </style>
+
+    <!-- ═══════════════════════════════════
+         NIGHT TOOLBAR
+         ═══════════════════════════════════ -->
+    <style name="Widget.SchoolApp.Toolbar.Night" parent="Widget.SchoolApp.Toolbar">
+        <item name="android:background">@color/night_bg_primary</item>
+        <item name="titleTextAppearance">@style/TextAppearance.SchoolApp.Toolbar.Title.Night</item>
+    </style>
+
+    <style name="TextAppearance.SchoolApp.Toolbar.Title.Night" parent="TextAppearance.SchoolApp.Toolbar.Title">
+        <item name="android:textColor">@color/night_text_primary</item>
+    </style>
+
+    <!-- ═══════════════════════════════════
+         NIGHT TEXT APPEARANCES
+         ═══════════════════════════════════ -->
+    <style name="TextAppearance.SchoolApp.Display.Night" parent="TextAppearance.SchoolApp.Display">
+        <item name="android:textColor">@color/night_text_primary</item>
+    </style>
+
+    <style name="TextAppearance.SchoolApp.Headline.Night" parent="TextAppearance.SchoolApp.Headline">
+        <item name="android:textColor">@color/night_text_primary</item>
+    </style>
+
+    <style name="TextAppearance.SchoolApp.StatNumber.Night" parent="TextAppearance.SchoolApp.StatNumber">
+        <item name="android:textColor">@color/stat_number_night</item>
+    </style>
+
+    <style name="TextAppearance.SchoolApp.ProfileName.Night" parent="TextAppearance.SchoolApp.ProfileName">
+        <item name="android:textColor">@color/night_text_primary</item>
+    </style>
+
+    <style name="TextAppearance.SchoolApp.SectionHeader.Night" parent="TextAppearance.SchoolApp.SectionHeader">
+        <item name="android:textColor">@color/night_text_tertiary</item>
+    </style>
+
+    <!-- ═══════════════════════════════════
+         NIGHT DIALOG
+         ═══════════════════════════════════ -->
+    <style name="Theme.SchoolApp.Dialog.Night" parent="Theme.MaterialComponents.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="colorSurface">@color/night_bg_elevated</item>
+        <item name="colorOnSurface">@color/night_text_primary</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.SchoolApp.Large</item>
+    </style>
+
+    <!-- ═══════════════════════════════════
+         NIGHT BOTTOM SHEET
+         ═══════════════════════════════════ -->
+    <style name="Theme.SchoolApp.BottomSheet.Night" parent="Theme.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.SchoolApp.BottomSheet.Night</item>
+    </style>
+
+    <style name="Widget.SchoolApp.BottomSheet.Night" parent="Widget.SchoolApp.BottomSheet">
+        <item name="android:background">@drawable/bg_bottom_sheet_night</item>
+    </style>
+
+    <!-- ═══════════════════════════════════
+         NIGHT PROGRESS BAR
+         ═══════════════════════════════════ -->
+    <style name="Widget.SchoolApp.ProgressBar.Night" parent="Widget.SchoolApp.ProgressBar">
+        <item name="trackColor">@color/progress_track_night</item>
+    </style>
+
+    <!-- ═══════════════════════════════════
+         NIGHT TAB LAYOUT
+         ═══════════════════════════════════ -->
+    <style name="Widget.SchoolApp.TabLayout.Night" parent="Widget.SchoolApp.TabLayout">
+        <item name="android:background">@color/night_bg_surface</item>
+        <item name="tabTextColor">@color/night_text_secondary</item>
+        <item name="tabSelectedTextColor">@color/brand_primary_light</item>
+        <item name="tabIndicatorColor">@color/brand_primary_light</item>
+    </style>
+
+    <!-- ═══════════════════════════════════
+         NIGHT SWITCH
+         ═══════════════════════════════════ -->
+    <style name="Widget.SchoolApp.Switch.Night" parent="Widget.SchoolApp.Switch">
+        <item name="trackTint">@color/toggle_track_color_night</item>
+    </style>
+
+</resources>

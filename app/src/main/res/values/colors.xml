@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ╔══════════════════════════════════════════════════════════════╗
+    ║         SCHOOL APP — COMPLETE COLOR SYSTEM                   ║
+    ║         Supports Day Mode + Night Mode (Dark Navy/Glassy)    ║
+    ╚══════════════════════════════════════════════════════════════╝
+-->
+<resources>
+
+    <!-- ══════════════════════════════════════════
+         PRIMARY BRAND COLORS
+         ══════════════════════════════════════════ -->
+    <color name="brand_primary">#4A7EE8</color>          <!-- Main blue -->
+    <color name="brand_primary_dark">#3366CC</color>      <!-- Darker blue -->
+    <color name="brand_primary_light">#6B9BFF</color>     <!-- Lighter blue -->
+    <color name="brand_primary_alpha20">#334A7EE8</color> <!-- 20% opacity blue -->
+    <color name="brand_primary_alpha10">#1A4A7EE8</color> <!-- 10% opacity blue -->
+
+    <color name="brand_secondary">#6C5CE7</color>         <!-- Purple accent -->
+    <color name="brand_secondary_light">#8B7FF0</color>
+
+    <!-- ══════════════════════════════════════════
+         DAY MODE (LIGHT THEME) COLORS
+         ══════════════════════════════════════════ -->
+
+    <!-- Backgrounds -->
+    <color name="day_bg_primary">#F2F4F8</color>          <!-- Page background -->
+    <color name="day_bg_surface">#FFFFFF</color>           <!-- Cards, sheets -->
+    <color name="day_bg_surface_2">#F7F9FC</color>        <!-- Slightly off-white surface -->
+    <color name="day_bg_elevated">#FFFFFF</color>          <!-- Dialogs, bottom sheets -->
+    <color name="day_bg_glass">#E8EDF6</color>             <!-- Glass card tint -->
+    <color name="day_bg_overlay">#1A000000</color>         <!-- Scrim overlay -->
+
+    <!-- Feature Tile Backgrounds (Day) -->
+    <color name="day_tile_bg">#EDF1FB</color>              <!-- Light blue tile bg -->
+    <color name="day_tile_bg_purple">#EDE9FB</color>
+    <color name="day_tile_bg_green">#E4F6EE</color>
+    <color name="day_tile_bg_orange">#FEF0E3</color>
+    <color name="day_tile_bg_pink">#FCE8F3</color>
+    <color name="day_tile_bg_teal">#E2F5F5</color>
+    <color name="day_tile_bg_red">#FDEAEA</color>
+    <color name="day_tile_bg_yellow">#FEF8E1</color>
+
+    <!-- Text Colors (Day) -->
+    <color name="day_text_primary">#0D1B3E</color>         <!-- Deep navy text -->
+    <color name="day_text_secondary">#4A5568</color>       <!-- Secondary text -->
+    <color name="day_text_tertiary">#8898AA</color>        <!-- Hint/placeholder -->
+    <color name="day_text_on_primary">#FFFFFF</color>      <!-- Text on brand color -->
+    <color name="day_text_link">#4A7EE8</color>
+
+    <!-- Border/Divider (Day) -->
+    <color name="day_border">#DDE3ED</color>
+    <color name="day_divider">#EAEEf5</color>
+    <color name="day_stroke_card">#D4DCF0</color>
+
+    <!-- Status Bar / Nav Bar (Day) -->
+    <color name="day_status_bar">#F2F4F8</color>
+    <color name="day_nav_bar">#FFFFFF</color>
+
+    <!-- ══════════════════════════════════════════
+         NIGHT MODE (DARK NAVY THEME) COLORS
+         ══════════════════════════════════════════ -->
+
+    <!-- Backgrounds (Night) — matches your screenshot perfectly -->
+    <color name="night_bg_primary">#080D1A</color>         <!-- Deepest background -->
+    <color name="night_bg_surface">#111827</color>         <!-- Main card surface -->
+    <color name="night_bg_surface_2">#141D2E</color>       <!-- Secondary surface -->
+    <color name="night_bg_elevated">#1A2438</color>        <!-- Elevated cards/dialogs -->
+    <color name="night_bg_glass">#1C2840</color>           <!-- Glass tint -->
+    <color name="night_bg_overlay">#4D000000</color>       <!-- Dark scrim -->
+
+    <!-- Feature Tile Backgrounds (Night) — matches screenshot tiles -->
+    <color name="night_tile_bg">#1A2440</color>            <!-- Default tile dark blue -->
+    <color name="night_tile_bg_purple">#1F1A3D</color>
+    <color name="night_tile_bg_green">#0F2821</color>
+    <color name="night_tile_bg_orange">#291A0A</color>
+    <color name="night_tile_bg_pink">#2A1020</color>
+    <color name="night_tile_bg_teal">#0F2428</color>
+    <color name="night_tile_bg_red">#2A1010</color>
+    <color name="night_tile_bg_yellow">#291F0A</color>
+
+    <!-- Text Colors (Night) -->
+    <color name="night_text_primary">#EDF2FF</color>       <!-- Bright white-blue -->
+    <color name="night_text_secondary">#8898B8</color>     <!-- Muted blue-gray -->
+    <color name="night_text_tertiary">#4A5F80</color>      <!-- Very muted -->
+    <color name="night_text_on_primary">#FFFFFF</color>
+    <color name="night_text_link">#6B9BFF</color>
+
+    <!-- Border/Divider (Night) -->
+    <color name="night_border">#1E2D4A</color>
+    <color name="night_divider">#182236</color>
+    <color name="night_stroke_card">#1E2E4E</color>
+
+    <!-- Status Bar / Nav Bar (Night) -->
+    <color name="night_status_bar">#080D1A</color>
+    <color name="night_nav_bar">#0E1525</color>
+
+    <!-- ══════════════════════════════════════════
+         SEMANTIC / FUNCTIONAL COLORS
+         (Same in both modes, used via theme attrs)
+         ══════════════════════════════════════════ -->
+
+    <!-- Success -->
+    <color name="success_main">#22C78A</color>
+    <color name="success_light">#D4F7EC</color>
+    <color name="success_dark">#0F9E6A</color>
+    <color name="success_text_day">#0A6E49</color>
+    <color name="success_text_night">#5DEDD6</color>
+
+    <!-- Warning -->
+    <color name="warning_main">#F59E0B</color>
+    <color name="warning_light">#FEF3C7</color>
+    <color name="warning_dark">#D97706</color>
+    <color name="warning_text_day">#92400E</color>
+    <color name="warning_text_night">#FBBF24</color>
+
+    <!-- Error / Danger -->
+    <color name="error_main">#EF4444</color>
+    <color name="error_light">#FEE2E2</color>
+    <color name="error_dark">#DC2626</color>
+    <color name="error_text_day">#991B1B</color>
+    <color name="error_text_night">#FCA5A5</color>
+
+    <!-- Info -->
+    <color name="info_main">#3B82F6</color>
+    <color name="info_light">#DBEAFE</color>
+    <color name="info_dark">#2563EB</color>
+    <color name="info_text_day">#1E40AF</color>
+    <color name="info_text_night">#93C5FD</color>
+
+    <!-- ══════════════════════════════════════════
+         SCORE / GRADE BADGE COLORS
+         (Used in Recent Tests section)
+         ══════════════════════════════════════════ -->
+    <color name="score_excellent_bg">#1A4A2E</color>       <!-- 80-100 → green badge -->
+    <color name="score_excellent_text">#4AE89A</color>
+    <color name="score_good_bg">#3A2A10</color>             <!-- 60-79 → orange badge -->
+    <color name="score_good_text">#F59E0B</color>
+    <color name="score_average_bg">#1A2A4A</color>         <!-- 40-59 → blue badge -->
+    <color name="score_average_text">#6B9BFF</color>
+    <color name="score_low_bg">#3A1010</color>              <!-- 0-39 → red badge -->
+    <color name="score_low_text">#F87171</color>
+
+    <!-- Day mode score badges -->
+    <color name="score_excellent_bg_day">#D1FAE5</color>
+    <color name="score_excellent_text_day">#065F46</color>
+    <color name="score_good_bg_day">#FEF3C7</color>
+    <color name="score_good_text_day">#92400E</color>
+    <color name="score_average_bg_day">#DBEAFE</color>
+    <color name="score_average_text_day">#1E40AF</color>
+    <color name="score_low_bg_day">#FEE2E2</color>
+    <color name="score_low_text_day">#991B1B</color>
+
+    <!-- ══════════════════════════════════════════
+         PROGRESS BAR COLORS
+         (Subject Progress section)
+         ══════════════════════════════════════════ -->
+    <color name="progress_math">#4A7EE8</color>             <!-- Blue -->
+    <color name="progress_science">#22C78A</color>          <!-- Green -->
+    <color name="progress_english">#A855F7</color>          <!-- Purple -->
+    <color name="progress_history">#F59E0B</color>          <!-- Amber -->
+    <color name="progress_track_day">#E2E8F0</color>
+    <color name="progress_track_night">#1E2D4A</color>
+
+    <!-- ══════════════════════════════════════════
+         ICON ACCENT COLORS (Feature Tiles)
+         ══════════════════════════════════════════ -->
+    <color name="icon_blue">#4A7EE8</color>
+    <color name="icon_purple">#8B5CF6</color>
+    <color name="icon_green">#10B981</color>
+    <color name="icon_orange">#F97316</color>
+    <color name="icon_pink">#EC4899</color>
+    <color name="icon_teal">#14B8A6</color>
+    <color name="icon_red">#EF4444</color>
+    <color name="icon_yellow">#EAB308</color>
+    <color name="icon_amber">#F59E0B</color>
+    <color name="icon_indigo">#6366F1</color>
+
+    <!-- ══════════════════════════════════════════
+         BADGE COLORS (NEW / HOT labels)
+         ══════════════════════════════════════════ -->
+    <color name="badge_new_bg">#EF4444</color>
+    <color name="badge_new_text">#FFFFFF</color>
+    <color name="badge_hot_bg">#F97316</color>
+    <color name="badge_hot_text">#FFFFFF</color>
+
+    <!-- ══════════════════════════════════════════
+         GLASS / FROSTED EFFECT HELPERS
+         ══════════════════════════════════════════ -->
+    <color name="glass_stroke_day">#C0CCE0</color>
+    <color name="glass_stroke_night">#243050</color>
+    <color name="glass_fill_day">#FFFFFFCC</color>           <!-- 80% white -->
+    <color name="glass_fill_night">#141D2ECC</color>         <!-- 80% dark navy -->
+    <color name="glass_shimmer_day">#FFFFFF33</color>        <!-- 20% white shimmer -->
+    <color name="glass_shimmer_night">#FFFFFF0D</color>      <!-- 5% white shimmer -->
+
+    <!-- ══════════════════════════════════════════
+         ANNOUNCEMENT BANNER
+         ══════════════════════════════════════════ -->
+    <color name="announcement_dot">#4A7EE8</color>
+    <color name="announcement_bg_day">#EEF3FE</color>
+    <color name="announcement_bg_night">#141D30</color>
+    <color name="announcement_border_day">#BDD0FA</color>
+    <color name="announcement_border_night">#1E2D4A</color>
+
+    <!-- ══════════════════════════════════════════
+         STAT CARDS (Students / Classes / Attendance)
+         ══════════════════════════════════════════ -->
+    <color name="stat_card_bg_day">#FFFFFF</color>
+    <color name="stat_card_bg_night">#141D2E</color>
+    <color name="stat_number_day">#0D1B3E</color>
+    <color name="stat_number_night">#EDF2FF</color>
+    <color name="stat_label_day">#8898AA</color>
+    <color name="stat_label_night">#4A5F80</color>
+
+    <!-- ══════════════════════════════════════════
+         BOTTOM NAVIGATION BAR
+         ══════════════════════════════════════════ -->
+    <color name="bottom_nav_bg_day">#FFFFFF</color>
+    <color name="bottom_nav_bg_night">#0E1525</color>
+    <color name="bottom_nav_active_day">#4A7EE8</color>
+    <color name="bottom_nav_active_night">#6B9BFF</color>
+    <color name="bottom_nav_inactive_day">#8898AA</color>
+    <color name="bottom_nav_inactive_night">#4A5F80</color>
+    <color name="bottom_nav_indicator_day">#EEF3FE</color>
+    <color name="bottom_nav_indicator_night">#141D30</color>
+
+    <!-- ══════════════════════════════════════════
+         PROFILE HEADER
+         ══════════════════════════════════════════ -->
+    <color name="profile_card_bg_day">#FFFFFF</color>
+    <color name="profile_card_bg_night">#111827</color>
+    <color name="profile_avatar_bg_day">#E8EDF6</color>
+    <color name="profile_avatar_bg_night">#1A2438</color>
+    <color name="year_badge_bg">#4A7EE8</color>
+    <color name="year_badge_text">#FFFFFF</color>
+
+    <!-- ══════════════════════════════════════════
+         RIPPLE / PRESSED STATES
+         ══════════════════════════════════════════ -->
+    <color name="ripple_day">#1A4A7EE8</color>              <!-- 10% blue -->
+    <color name="ripple_night">#266B9BFF</color>            <!-- 15% light blue -->
+
+
+
+    <color name="bottom_nav_icon_color_day">#222222</color>
+    <color name="toggle_track_color_day">#BDBDBD</color>
+
+
+        <!-- Bottom Nav -->
+        <color name="bottom_nav_icon_color_night">#FFFFFF</color>
+
+        <!-- Toggle -->
+        <color name="toggle_track_color_night">#666666</color>
+
+
+    <!-- ══════════════════════════════════════════
+         TOGGLE / SWITCH (Dark Mode toggle)
+         ══════════════════════════════════════════ -->
+    <color name="toggle_track_on">#4A7EE8</color>
+    <color name="toggle_track_off_day">#CBD5E1</color>
+    <color name="toggle_track_off_night">#1E2D4A</color>
+    <color name="toggle_thumb">#FFFFFF</color>
+
+    <!-- Material Design required colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ╔══════════════════════════════════════════════════════════════╗
+    ║   res/values/theme_attrs.xml  —  DAY MODE attr values        ║
+    ║   These map custom attrs → actual colors for LIGHT mode      ║
+    ╚══════════════════════════════════════════════════════════════╝
+    Add this <style> block INSIDE Theme.SchoolApp in themes.xml
+    OR apply as a separate overlay theme.
+-->
+<resources>
+
+    <style name="ThemeOverlay.SchoolApp.DayAttrs" parent="">
+        <!-- Backgrounds -->
+        <item name="colorBgPrimary">@color/day_bg_primary</item>
+        <item name="colorBgSurface">@color/day_bg_surface</item>
+        <item name="colorBgSurface2">@color/day_bg_surface_2</item>
+        <item name="colorBgElevated">@color/day_bg_elevated</item>
+        <item name="colorBgGlass">@color/day_bg_glass</item>
+
+        <!-- Tiles -->
+        <item name="colorTileBg">@color/day_tile_bg</item>
+        <item name="colorTileBgPurple">@color/day_tile_bg_purple</item>
+        <item name="colorTileBgGreen">@color/day_tile_bg_green</item>
+        <item name="colorTileBgOrange">@color/day_tile_bg_orange</item>
+        <item name="colorTileBgPink">@color/day_tile_bg_pink</item>
+        <item name="colorTileBgTeal">@color/day_tile_bg_teal</item>
+        <item name="colorTileBgRed">@color/day_tile_bg_red</item>
+        <item name="colorTileBgYellow">@color/day_tile_bg_yellow</item>
+
+        <!-- Text -->
+        <item name="colorTextPrimary">@color/day_text_primary</item>
+        <item name="colorTextSecondary">@color/day_text_secondary</item>
+        <item name="colorTextTertiary">@color/day_text_tertiary</item>
+        <item name="colorTextLink">@color/day_text_link</item>
+
+        <!-- Borders -->
+        <item name="colorBorder">@color/day_border</item>
+        <item name="colorDivider">@color/day_divider</item>
+        <item name="colorStrokeCard">@color/day_stroke_card</item>
+        <item name="colorGlassStroke">@color/glass_stroke_day</item>
+
+        <!-- Nav -->
+        <item name="colorBottomNavBg">@color/bottom_nav_bg_day</item>
+        <item name="colorBottomNavActive">@color/bottom_nav_active_day</item>
+        <item name="colorBottomNavInactive">@color/bottom_nav_inactive_day</item>
+        <item name="colorBottomNavIndicator">@color/bottom_nav_indicator_day</item>
+
+        <!-- Stats -->
+        <item name="colorStatCardBg">@color/stat_card_bg_day</item>
+        <item name="colorStatNumber">@color/stat_number_day</item>
+        <item name="colorStatLabel">@color/stat_label_day</item>
+
+        <!-- Announcement -->
+        <item name="colorAnnouncementBg">@color/announcement_bg_day</item>
+        <item name="colorAnnouncementBorder">@color/announcement_border_day</item>
+
+        <!-- Profile -->
+        <item name="colorProfileCardBg">@color/profile_card_bg_day</item>
+        <item name="colorAvatarBg">@color/profile_avatar_bg_day</item>
+
+        <!-- Progress -->
+        <item name="colorProgressTrack">@color/progress_track_day</item>
+
+        <!-- Score badges -->
+        <item name="colorScoreExcellentBg">@color/score_excellent_bg_day</item>
+        <item name="colorScoreExcellentText">@color/score_excellent_text_day</item>
+        <item name="colorScoreGoodBg">@color/score_good_bg_day</item>
+        <item name="colorScoreGoodText">@color/score_good_text_day</item>
+        <item name="colorScoreAverageBg">@color/score_average_bg_day</item>
+        <item name="colorScoreAverageText">@color/score_average_text_day</item>
+        <item name="colorScoreLowBg">@color/score_low_bg_day</item>
+        <item name="colorScoreLowText">@color/score_low_text_day</item>
+    </style>
+
+</resources>
