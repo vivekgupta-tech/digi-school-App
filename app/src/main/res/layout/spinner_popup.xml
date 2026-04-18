@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/popup_background">
+
+    <!-- Compact SearchView -->
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/spinner_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:minHeight="0dp"
+        android:padding="2dp"
+        />
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D3D3D3"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"/>
+
+    <!-- List of Items -->
+    <ListView
+        android:id="@+id/spinner_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#CCCCCC"
+        android:dividerHeight="0.5dp" />
+</LinearLayout>

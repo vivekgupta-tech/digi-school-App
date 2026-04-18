@@ -1,0 +1,4 @@
+<resources>
+    <!-- Height of the custom spinner popup -->
+    <dimen name="popup_window_height">300dp</dimen>
+</resources>
