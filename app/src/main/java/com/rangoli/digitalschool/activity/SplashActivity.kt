@@ -2,6 +2,7 @@ package com.rangoli.digitalschool.activity
 
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
+import android.animation.ValueAnimator
 import android.content.Intent
 import android.graphics.Typeface
 import android.os.Bundle
@@ -97,7 +98,7 @@ class SplashActivity : AppCompatActivity() {
      *  1. Deco circles fade in (0ms)
      *  2. Ring + inner ring fade/scale in (100ms)
      *  3. Logo book pop in with overshoot (200ms)
-     *  4. AI sparkle pop in (550ms)
+     *  4. AI sparkle pop in + start blinking (550ms)
      *  5. Ring starts rotating (600ms — continuous)
      *  6. Brand text fade-up (800ms)
      *  7. Slogan fade-up (1000ms)
@@ -121,11 +122,12 @@ class SplashActivity : AppCompatActivity() {
             binding.logoBook.alpha = 1f
         }, 200)
 
-        // ── 4. AI sparkle pop-in ──────────────────────────────────
+        // ── 4. AI sparkle pop-in + Blinking ───────────────────────
         handler.postDelayed({
             val anim = AnimationUtils.loadAnimation(this, R.animator.anim_logo_in)
             binding.aiStar.startAnimation(anim)
             binding.aiStar.alpha = 1f
+            startSparkleBlink()
         }, 550)
 
         // ── 5. Start ring continuous rotation ─────────────────────
@@ -158,6 +160,30 @@ class SplashActivity : AppCompatActivity() {
             handler.postDelayed({ startDotBounce(binding.dot2, 170L) }, 400)
             handler.postDelayed({ startDotBounce(binding.dot3, 340L) }, 400)
         }, 1150)
+    }
+
+    /**
+     * AI Sparkle blinking animation (Scale + Alpha).
+     */
+    private fun startSparkleBlink() {
+        val scaleX = ObjectAnimator.ofFloat(binding.aiStar, View.SCALE_X, 1f, 1.25f, 1f).apply {
+            repeatCount = ValueAnimator.INFINITE
+            duration = 1500L
+        }
+        val scaleY = ObjectAnimator.ofFloat(binding.aiStar, View.SCALE_Y, 1f, 1.25f, 1f).apply {
+            repeatCount = ValueAnimator.INFINITE
+            duration = 1500L
+        }
+        val alpha = ObjectAnimator.ofFloat(binding.aiStar, View.ALPHA, 1f, 0.6f, 1f).apply {
+            repeatCount = ValueAnimator.INFINITE
+            duration = 1500L
+        }
+
+        AnimatorSet().apply {
+            playTogether(scaleX, scaleY, alpha)
+            interpolator = AccelerateDecelerateInterpolator()
+            start()
+        }
     }
 
     /**
