@@ -210,7 +210,7 @@ class SplashActivity : AppCompatActivity() {
             finish()
         }, 350)
     }
-//wertghyjukilop;[poiu
+//wertghyjukilop;[poiuzsdxvgbhnjmkl,;ejkl;ernkml,
     override fun onDestroy() {
         super.onDestroy()
         handler.removeCallbacksAndMessages(null)
