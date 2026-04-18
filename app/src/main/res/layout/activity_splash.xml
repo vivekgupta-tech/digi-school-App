@@ -41,8 +41,8 @@
     <!-- ── Rotating dashed ring (outer) ── -->
     <ImageView
         android:id="@+id/ringRotate"
-        android:layout_width="172dp"
-        android:layout_height="172dp"
+        android:layout_width="154dp"
+        android:layout_height="154dp"
         android:src="@drawable/ic_splash_ring_dashed"
         android:alpha="0"
         app:layout_constraintTop_toTopOf="parent"
@@ -76,17 +76,17 @@
         app:layout_constraintStart_toStartOf="@id/ringRotate"
         app:layout_constraintEnd_toEndOf="@id/ringRotate" />
 
-    <!-- ── AI sparkle / star above logo ── -->
+    <!-- ── AI sparkle / star above logo (increased size) ── -->
     <ImageView
         android:id="@+id/aiStar"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
         android:src="@drawable/ic_ai_sparkle"
         android:alpha="0"
         app:layout_constraintBottom_toTopOf="@id/logoBook"
         app:layout_constraintStart_toStartOf="@id/logoBook"
         app:layout_constraintEnd_toEndOf="@id/logoBook"
-        android:layout_marginBottom="2dp" />
+        android:layout_marginBottom="-2dp" />
 
     <!-- ── Brand name: DigiSchool ── -->
         <TextView
