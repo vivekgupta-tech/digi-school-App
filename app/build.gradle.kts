@@ -64,5 +64,7 @@ dependencies {
     implementation(libs.androidx.splashscreen)
     implementation(libs.localbroadcastmanager)
 
+    implementation(libs.google.services.base)
+
     implementation("com.google.android.material:material:1.11.0")
 }

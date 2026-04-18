@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ╔══════════════════════════════════════════════════════════════╗
+    ║   res/values/colors_splash.xml                              ║
+    ║   Splash-specific color tokens — Day (Light) Mode           ║
+    ║   Night overrides go in res/values-night/colors_splash.xml  ║
+    ╚══════════════════════════════════════════════════════════════╝
+-->
+<resources>
+
+    <!-- ── Splash background ── -->
+    <!-- Day: brand primary blue  |  Night: deep navy  -->
+    <color name="splash_bg">#4A7EE8</color>
+
+    <!-- ── Dashed rotating ring ── -->
+    <!-- Day: semi-transparent white  |  Night: brand blue -->
+    <color name="splash_ring_color">#99FFFFFF</color>
+
+    <!-- ── Inner solid ring ── -->
+    <color name="splash_ring_inner_color">#33FFFFFF</color>
+
+    <!-- ── Logo colors (Day — white on blue bg) ── -->
+    <color name="logo_page_left">#F7FAFF</color>         <!-- Near-white, left page -->
+    <color name="logo_page_right">#DDEAFF</color>        <!-- Slightly dimmer, right page -->
+    <color name="logo_spine">#4D1E3A8A</color>           <!-- Dark semi-transparent spine -->
+    <color name="logo_lines">#66FFFFFF</color>           <!-- Text line hints on pages -->
+    <color name="logo_curve">#33FFFFFF</color>           <!-- Bottom curve -->
+
+    <!-- ── AI Sparkle star ── -->
+    <color name="ai_sparkle_main">#FFFFFFFF</color>      <!-- White star Day -->
+    <color name="ai_sparkle_accent">#CCFFFFFF</color>
+
+    <!-- ── Brand name ── -->
+    <!-- "Digi" uses brand_primary (white on day splash bg) -->
+    <color name="splash_brand_text">#FFFFFFFF</color>
+    <color name="splash_brand_digi">#FFFFFFFF</color>    <!-- Bold portion -->
+    <color name="splash_brand_school">#CCF0F4FF</color>  <!-- Light portion -->
+
+    <!-- ── Slogan ── -->
+    <color name="splash_slogan_text">#99FFFFFF</color>
+
+    <!-- ── Loading dots ── -->
+    <color name="splash_dot_color">#B3FFFFFF</color>
+
+    <!-- ── Decorative background blobs ── -->
+    <color name="splash_deco_circle_1">#0FFFFFFF</color>  <!-- 6% white -->
+    <color name="splash_deco_circle_2">#07FFFFFF</color>  <!-- 4% white -->
+
+</resources>

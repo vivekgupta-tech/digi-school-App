@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ╔══════════════════════════════════════════════════════════════╗
+    ║   res/drawable/ic_logo_book.xml                             ║
+    ║   Open book logo — matches the splash screen design         ║
+    ║   Day: white paths  |  Night: light-blue paths              ║
+    ╚══════════════════════════════════════════════════════════════╝
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="72dp"
+    android:height="88dp"
+    android:viewportWidth="120"
+    android:viewportHeight="148">
+
+    <!-- Left book page -->
+    <path
+        android:pathData="M10,79 C10,72 30,63 57,59 L57,121 C30,127 10,133 10,129Z"
+        android:fillColor="@color/logo_page_left" />
+
+    <!-- Right book page -->
+    <path
+        android:pathData="M110,79 C110,72 90,63 63,59 L63,121 C90,127 110,133 110,129Z"
+        android:fillColor="@color/logo_page_right" />
+
+    <!-- Spine shadow -->
+    <path
+        android:pathData="M57,58 L63,58 L63,122 L57,122Z"
+        android:fillColor="@color/logo_spine" />
+
+    <!-- Left page line 1 -->
+    <path
+        android:pathData="M22,86 L50,80"
+        android:strokeColor="@color/logo_lines"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent" />
+
+    <!-- Left page line 2 -->
+    <path
+        android:pathData="M22,98 L50,92"
+        android:strokeColor="@color/logo_lines"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"
+        android:fillAlpha="0.7" />
+
+    <!-- Left page line 3 -->
+    <path
+        android:pathData="M22,110 L50,105"
+        android:strokeColor="@color/logo_lines"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"
+        android:fillAlpha="0.5" />
+
+    <!-- Right page line 1 -->
+    <path
+        android:pathData="M70,80 L98,86"
+        android:strokeColor="@color/logo_lines"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"
+        android:fillAlpha="0.7" />
+
+    <!-- Right page line 2 -->
+    <path
+        android:pathData="M70,92 L98,98"
+        android:strokeColor="@color/logo_lines"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"
+        android:fillAlpha="0.5" />
+
+    <!-- Right page line 3 -->
+    <path
+        android:pathData="M70,105 L98,110"
+        android:strokeColor="@color/logo_lines"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent"
+        android:fillAlpha="0.35" />
+
+    <!-- Bottom curve -->
+    <path
+        android:pathData="M14,130 Q60,141 106,130"
+        android:strokeColor="@color/logo_curve"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent" />
+
+</vector>

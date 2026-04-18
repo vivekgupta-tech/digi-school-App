@@ -71,6 +71,7 @@
         <item name="toolbarStyle">@style/Widget.SchoolApp.Toolbar</item>
 
         <!-- Font -->
+        <item name="fontFamily">@font/poppins</item>
         <item name="android:fontFamily">@font/poppins</item>
     </style>
 
@@ -123,6 +124,7 @@
         <item name="cornerRadius">12dp</item>
         <item name="elevation">0dp</item>
         <item name="android:stateListAnimator">@null</item>
+        <item name="fontFamily">@font/poppins_semibold</item>
         <item name="android:fontFamily">@font/poppins_semibold</item>
     </style>
 
@@ -253,11 +255,13 @@
     <style name="TextAppearance.SchoolApp.Toolbar.Title" parent="TextAppearance.MaterialComponents.Headline6">
         <item name="android:textColor">@color/day_text_primary</item>
         <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/poppins_semibold</item>
         <item name="android:fontFamily">@font/poppins_semibold</item>
     </style>
 
     <style name="TextAppearance.SchoolApp.Display" parent="TextAppearance.MaterialComponents.Headline4">
         <item name="android:textSize">32sp</item>
+        <item name="fontFamily">@font/poppins_bold</item>
         <item name="android:fontFamily">@font/poppins_bold</item>
         <item name="android:textColor">@color/day_text_primary</item>
         <item name="android:letterSpacing">-0.01</item>
@@ -265,24 +269,28 @@
 
     <style name="TextAppearance.SchoolApp.Headline" parent="TextAppearance.MaterialComponents.Headline5">
         <item name="android:textSize">22sp</item>
+        <item name="fontFamily">@font/poppins_semibold</item>
         <item name="android:fontFamily">@font/poppins_semibold</item>
         <item name="android:textColor">@color/day_text_primary</item>
     </style>
 
     <style name="TextAppearance.SchoolApp.Title" parent="TextAppearance.MaterialComponents.Headline6">
         <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/poppins_medium</item>
         <item name="android:fontFamily">@font/poppins_medium</item>
         <item name="android:textColor">@color/day_text_primary</item>
     </style>
 
     <style name="TextAppearance.SchoolApp.Subtitle" parent="TextAppearance.MaterialComponents.Subtitle1">
         <item name="android:textSize">15sp</item>
+        <item name="fontFamily">@font/poppins_medium</item>
         <item name="android:fontFamily">@font/poppins_medium</item>
         <item name="android:textColor">@color/day_text_secondary</item>
     </style>
 
     <style name="TextAppearance.SchoolApp.Body" parent="TextAppearance.MaterialComponents.Body1">
         <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/poppins</item>
         <item name="android:fontFamily">@font/poppins</item>
         <item name="android:textColor">@color/day_text_primary</item>
         <item name="android:lineSpacingExtra">4dp</item>
@@ -290,12 +298,14 @@
 
     <style name="TextAppearance.SchoolApp.Caption" parent="TextAppearance.MaterialComponents.Caption">
         <item name="android:textSize">12sp</item>
+        <item name="fontFamily">@font/poppins</item>
         <item name="android:fontFamily">@font/poppins</item>
         <item name="android:textColor">@color/day_text_secondary</item>
     </style>
 
     <style name="TextAppearance.SchoolApp.Label" parent="TextAppearance.MaterialComponents.Overline">
         <item name="android:textSize">11sp</item>
+        <item name="fontFamily">@font/poppins_medium</item>
         <item name="android:fontFamily">@font/poppins_medium</item>
         <item name="android:textColor">@color/day_text_tertiary</item>
         <item name="android:letterSpacing">0.08</item>
@@ -305,6 +315,7 @@
     <!-- Stat number display (42, 6, 94%) -->
     <style name="TextAppearance.SchoolApp.StatNumber" parent="TextAppearance.SchoolApp.Display">
         <item name="android:textSize">28sp</item>
+        <item name="fontFamily">@font/poppins_bold</item>
         <item name="android:fontFamily">@font/poppins_bold</item>
         <item name="android:textColor">@color/stat_number_day</item>
     </style>
@@ -312,12 +323,14 @@
     <!-- Score badge text -->
     <style name="TextAppearance.SchoolApp.ScoreBadge" parent="">
         <item name="android:textSize">13sp</item>
+        <item name="fontFamily">@font/poppins_semibold</item>
         <item name="android:fontFamily">@font/poppins_semibold</item>
     </style>
 
     <!-- Profile name -->
     <style name="TextAppearance.SchoolApp.ProfileName" parent="">
         <item name="android:textSize">20sp</item>
+        <item name="fontFamily">@font/poppins_bold</item>
         <item name="android:fontFamily">@font/poppins_bold</item>
         <item name="android:textColor">@color/day_text_primary</item>
         <item name="android:letterSpacing">0.01</item>
@@ -405,6 +418,7 @@
 
     <style name="TextAppearance.SchoolApp.Tab" parent="TextAppearance.MaterialComponents.Subtitle2">
         <item name="android:textSize">13sp</item>
+        <item name="fontFamily">@font/poppins_medium</item>
         <item name="android:fontFamily">@font/poppins_medium</item>
     </style>
 

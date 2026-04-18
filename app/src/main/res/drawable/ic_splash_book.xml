@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="140dp"
+    android:height="110dp"
+    android:viewportWidth="120"
+    android:viewportHeight="100">
+
+    <!-- ── Left Page ── -->
+    <path
+        android:pathData="M10,32 C10,26 30,18 58,14 L58,78 C30,84 10,90 10,86 Z"
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.97"/>
+
+    <!-- ── Right Page (slight tint for depth) ── -->
+    <path
+        android:pathData="M110,32 C110,26 90,18 62,14 L62,78 C90,84 110,90 110,86 Z"
+        android:fillColor="#EEF2FF"
+        android:fillAlpha="0.97"/>
+
+    <!-- ── Spine Shadow ── -->
+    <path
+        android:pathData="M58,13 L62,13 L62,79 L58,79 Z"
+        android:fillColor="#2A5BC7"
+        android:fillAlpha="0.25"/>
+
+    <!-- ── Page Lines — Left ── -->
+    <path
+        android:pathData="M20,40 L50,33"
+        android:strokeColor="#4A7EE8"
+        android:strokeWidth="1.5"
+        android:strokeAlpha="0.2"
+        android:strokeLineCap="round"/>
+    <path
+        android:pathData="M20,52 L50,46"
+        android:strokeColor="#4A7EE8"
+        android:strokeWidth="1.5"
+        android:strokeAlpha="0.18"
+        android:strokeLineCap="round"/>
+    <path
+        android:pathData="M20,64 L50,59"
+        android:strokeColor="#4A7EE8"
+        android:strokeWidth="1.5"
+        android:strokeAlpha="0.15"
+        android:strokeLineCap="round"/>
+
+    <!-- ── Page Lines — Right ── -->
+    <path
+        android:pathData="M70,33 L100,40"
+        android:strokeColor="#4A7EE8"
+        android:strokeWidth="1.5"
+        android:strokeAlpha="0.2"
+        android:strokeLineCap="round"/>
+    <path
+        android:pathData="M70,46 L100,52"
+        android:strokeColor="#4A7EE8"
+        android:strokeWidth="1.5"
+        android:strokeAlpha="0.18"
+        android:strokeLineCap="round"/>
+    <path
+        android:pathData="M70,59 L100,64"
+        android:strokeColor="#4A7EE8"
+        android:strokeWidth="1.5"
+        android:strokeAlpha="0.15"
+        android:strokeLineCap="round"/>
+
+    <!-- ── Bottom Shadow Curve ── -->
+    <path
+        android:pathData="M12,88 Q60,98 108,88"
+        android:strokeColor="#1A3A7A"
+        android:strokeWidth="2"
+        android:strokeAlpha="0.12"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"/>
+
+</vector>
